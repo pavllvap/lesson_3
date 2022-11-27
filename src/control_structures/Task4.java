@@ -18,8 +18,6 @@ public class Task4 {
             System.out.println("it's normal");
         } else if (t < -20) {
             System.out.println("it's cold");
-        } else {
-            System.out.println("incorrect temperature");
         }
         scanner.close();
     }
