@@ -20,12 +20,14 @@ public class Task5 {
         System.out.println("Enter the number of color : ");
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
-        if (number >= 1 && number <= 7) {
-            String color = map.get(number);
-            System.out.println(color);
-        } else {
-            System.out.println("Incorrect number of color");
-        }
+        System.out.println(map.getOrDefault(number, "Incorrect number of color"));
+
+//        if (number >= 1 && number <= 7) {
+//            String color = map.get(number);
+//            System.out.println(color);
+//        } else {
+//            System.out.println("Incorrect number of color");
+//        }
         scanner.close();
     }
 }
